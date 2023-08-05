@@ -35,3 +35,12 @@ h1 input{
     width: 80%;
     height: 40%;
 }
+
+@media  screen and (max-width: 750px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 1px solid red; */
+        column-gap: 20px;
+    }
+}

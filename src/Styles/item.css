@@ -21,7 +21,24 @@ h1 button{
 }
 .posts{
     width: 250px;
+    border-radius: 5px;
 }
 .list-posts{
-    max-width: 300px;
+    max-width: 350px;
+}
+.card-posts{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+@media  screen and (max-width: 750px) {
+    .item-container{
+        flex-direction: column;
+    }
+    .more-posts{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }

@@ -26,3 +26,8 @@ body{
     background-color: #f05a22;
     filter: contrast(110%);
 }
+@media  screen and (max-width: 750px){
+    .header{
+        column-gap:10%;
+    }
+}

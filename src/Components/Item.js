@@ -62,8 +62,10 @@ const Item = () => {
       <ul className='more-posts'>
         {suggestions.map((post) => (
           <li key={post.id} className='list-posts'>
-            <img src={post.imgSrc} alt={`${post.id}`} className='posts'/>
-            <h4>{post.title}</h4>
+            <div className='card-posts'>
+              <img src={post.imgSrc} alt={`${post.id}`} className='posts'/>
+              <h4>{post.title}</h4>
+            </div>
           </li>
         ))}
       </ul>
