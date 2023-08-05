@@ -21,7 +21,7 @@ const Home = () => {
       {data.map((item) => (
         <div className='card' key={item.id}>
           {/* <div className='card'> */}
-            <img src={`https://picsum.photos/200?random=${item.id}`} alt={`Image-${item.id}`} />
+            <img src={`https://picsum.photos/200?random=${item.id}`} alt={`${item.id}`} />
             <h2>{item.title}</h2>
             <p>{item.body.slice(0, 100)}... <Link to={`/item/${item.id}`} className='link'>Read More...</Link></p>
           {/* </div> */}

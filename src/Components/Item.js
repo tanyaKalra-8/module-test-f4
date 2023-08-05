@@ -49,7 +49,7 @@ const Item = () => {
       <h1> <button onClick={goBack}>{"<--"}</button> Post Number {item.id}</h1>
       <div className='item-container'>
         <div>
-          <img src={item.imgSrc} alt={`Image-${item.id}`} />
+          <img src={item.imgSrc} alt={`${item.id}`} />
         </div>
         <div>
           <h2>{item.title}</h2>
@@ -63,7 +63,7 @@ const Item = () => {
         {suggestions.map((post) => (
           <li key={post.id}>
             <h4>{post.title}</h4>
-            <img src={post.imgSrc} alt={`Image-${post.id}`} />
+            <img src={post.imgSrc} alt={`${post.id}`} />
             <p>{post.body}</p>
             <p>User ID: {post.userId}</p>
           </li>

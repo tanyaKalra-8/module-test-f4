@@ -12,7 +12,7 @@ const Header = () => {
     <>
         <div className='header'>
           <div>
-            <a href='#' id='logo'>TravelMedia.in</a>
+            <span style={{cursor:"pointer"}} id='logo'>TravelMedia.in</span>
           </div>
           <div>
             <nav id='nav'>
