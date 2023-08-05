@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #F05A22;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    column-gap: 28%;
+}
+#logo{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#nav{
+    background-color: white;
+    border-radius: 200px;
+    padding: 7px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 70px;
+}
+.active img{
+    background-color: #f05a22;
+    filter: contrast(110%);
+}
