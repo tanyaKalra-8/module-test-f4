@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from '../redux/action';
 import "../Styles/item.css"
 import { useNavigate } from 'react-router-dom';
-import { HiArrowLeft } from "react-icons/hi2";
 
 const Item = () => {
   const { id } = useParams();
