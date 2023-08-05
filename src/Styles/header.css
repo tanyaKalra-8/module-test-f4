@@ -30,4 +30,9 @@ body{
     .header{
         column-gap:10%;
     }
+    #nav{
+        column-gap: 40px;
+        padding: 7px 10px;
+        max-width: 200px;
+    }
 }
