@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchData } from '../redux/action';
 import "../Styles/item.css"
 import { useNavigate } from 'react-router-dom';
+import back from "../Resources/Vector 12.png"
 
 const Item = () => {
   const { id } = useParams();
@@ -45,10 +46,10 @@ const Item = () => {
 
   return (
     <div className='main'>
-      <h1> <button onClick={goBack}>{"<--"}</button> Post Number {item.id}</h1>
+      <h1> <button onClick={goBack}><img src={back} alt='go back'/></button> Post Number {item.id}</h1>
       <div className='item-container'>
         <div>
-          <img src={item.imgSrc} alt={`${item.id}`} />
+          <img src={item.imgSrc} alt={`${item.id}`} id='item-img'/>
         </div>
         <div>
           <h2>{item.title}</h2>
@@ -58,13 +59,11 @@ const Item = () => {
       </div>
 
       <h3>More Posts:</h3>
-      <ul>
+      <ul className='more-posts'>
         {suggestions.map((post) => (
-          <li key={post.id}>
+          <li key={post.id} className='list-posts'>
+            <img src={post.imgSrc} alt={`${post.id}`} className='posts'/>
             <h4>{post.title}</h4>
-            <img src={post.imgSrc} alt={`${post.id}`} />
-            <p>{post.body}</p>
-            <p>User ID: {post.userId}</p>
           </li>
         ))}
       </ul>

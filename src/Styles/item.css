@@ -1,9 +1,27 @@
 .item-container{
     display: flex;
+    column-gap: 100px;
 }
 h1 button{
     background-color: white;
     border-radius: 50%;
     border: none;
     padding: 5px;
+}
+#item-img{
+    margin-left: 50px;
+    width: 300px;
+}
+.more-posts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.more-posts li{
+    list-style-type: none;
+}
+.posts{
+    width: 250px;
+}
+.list-posts{
+    max-width: 300px;
 }
